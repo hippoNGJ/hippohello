@@ -1,1 +1,37 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Sunflower:wght@300;500;700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Sunflower', sans-serif; */
+/* 선택자 */
+* {margin:0;padding:0;box-sizing: border-box;}
+a:link, a:visited {color:inherit;text-decoration: none;}/*상태 선택자*/
+nav ul {list-style: none;}
+body {font-family: 'Noto Sans KR', sans-serif;font-size:12px;color:#666;}
+#wrap {width:1200px;margin:0 auto;}
+header {height:100px; position : relative;}  
+header>p {text-align: right;}
+#logo>img{height: 70px;}
+header>nav {position : absolute;right:10px;top:30px;}
+#gnb>li {float:left; text-align: center;}
+#gnb>li>a {font-size:2em;width:180px;display:block;padding:10px 0;transition-duration:0.4s;} /*transition-duration : 천천히 애니메이션 효과*/
+#gnb>li:hover>a {background-color:royalblue; color:#fff;}
+#gnb>li:hover>.submenu {height:176px;}
+.submenu {height:0; transition-duration: 0.4s; overflow: hidden; *box-shadow: 5px 5px 8px #000;}
+.submenu a {display:block;font-size: 1.6em; padding:8px 0; background-color:rgba(0,0,0,0.65);color:#fff; transition-duration: 0.4s;}
+.submenu a:hover {background-color:steelblue; transform: rotate(5deg);}
+#mainImg {
+    height:400px; background-color: crimson;  
+    background-image: url(../images/first.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 클래스 선택자는 . */
+/* .box {width:100px;height:100px;} 
+.yellow {background-color : yellow;}
+.red {background-color : red;}
+.orange {background-color: orange;}
+.top {position: absolute; top:0;}
+.topRight {position: absolute; top:0;right:0;}
+.layer {position : fixed; top:200px; left:30%;} */
